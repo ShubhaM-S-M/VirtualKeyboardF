@@ -1,0 +1,10 @@
+body{
+  background: black;
+}
+nav{ 
+      display: "flex";
+      gap: "20px";
+      padding: "15px";
+      background: "#282c34";
+      width: "100%"
+    }
