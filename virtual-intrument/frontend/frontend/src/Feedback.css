@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.feedback-container {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #0f172a, #1e3a8a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.feedback-title {
+  font-size: 2.8rem;
+  color: #93c5fd;
+  text-shadow: 0 0 10px #60a5fa;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feedback-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.feedback-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.feedback-form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #60a5fa;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #60a5fa;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #60a5fa;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  box-shadow: 0 0 15px #60a5fa;
+  transform: scale(1.03);
+}
+
+.thankyou-message {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.thankyou-message h2 {
+  color: #38bdf8;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.thankyou-message p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+.feedback-footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
