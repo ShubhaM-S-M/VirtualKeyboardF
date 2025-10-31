@@ -1,0 +1,136 @@
+.piano-root {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  margin: 40px 0 10px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.header p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  color: #38bdf8;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #a5b4fc;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+/* === FULL-WIDTH PIANO === */
+.piano-full {
+  width: 100vw;          /* full screen width */
+  height: 250px;
+  background-color: #1e293b;
+  position: relative;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Keys container spans full width */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  height: 100%;
+  position: relative;
+}
+
+/* White keys span across */
+.white {
+  background: linear-gradient(to bottom, #f9fafb, #dbeafe);
+  border: 1px solid #93c5fd;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.white:hover {
+  background-color: #bfdbfe;
+}
+
+.white.active,
+.white:active {
+  background-color: #72acf2;
+  transform: translateY(2px);
+  color: #93c5fd;
+}
+
+/* Black keys */
+.blacks {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 10px;
+  height: 60%;
+  pointer-events: none;
+}
+
+.black {
+  background: linear-gradient(to bottom, #111827, #1e293b);
+  width: 70%;
+  height: 100%;
+  border-radius: 3px;
+  margin: 0 auto;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.black:hover {
+  background-color: #374151;
+}
+
+.black:active {
+  background-color: #4b5563;
+  transform: translateY(2px);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .piano-full {
+    height: 180px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+}
